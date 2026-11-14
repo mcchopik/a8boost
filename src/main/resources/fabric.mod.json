@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "a8boost",
+	"version": "${version}",
+	"name": "A8Boost",
+	"description": "Adaptive client optimization for low-end AMD A8 and Radeon R7 systems.",
+	"authors": [
+		"mcchopik"
+	],
+	"contact": {
+		"homepage": "https://github.com/mcchopik/a8boost",
+		"sources": "https://github.com/mcchopik/a8boost",
+		"issues": "https://github.com/mcchopik/a8boost/issues"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.mcchopik.a8boost.A8Boost"
+		],
+		"client": [
+			"com.mcchopik.a8boost.client.A8BoostClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "a8boost.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

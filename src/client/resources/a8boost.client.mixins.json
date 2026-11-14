@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.mcchopik.a8boost.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "BlockEntityRenderDispatcherMixin",
+    "ParticleEngineMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
